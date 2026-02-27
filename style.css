@@ -70,14 +70,19 @@ body {
   z-index: 100;
 }
 
-/* Menu links */
+/* Menu + links */
 .menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-300);
   position: fixed;
   inset: 0 0 0 30%;
   padding-inline: var(--sp-300);
   padding-block-start: 8.375rem;;
-  background-color: pink;
+  background-color: var(--white);
   z-index: 10;
+  transition: transform 250ms ease;
+  transform: translateX(100%);
 }
 
 .menu li {
@@ -88,4 +93,5 @@ body {
   font-size: clamp(1.125rem, 1.3039rem + -0.7634vw, 0.9375rem);
   line-height: var(--sp-300);
   text-decoration: none;
+  color: var(--c-navy-950);
 }
