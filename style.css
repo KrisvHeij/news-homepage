@@ -95,3 +95,7 @@ body {
   text-decoration: none;
   color: var(--c-navy-950);
 }
+
+.menu-show {
+  transform: translateX(0%);
+}
