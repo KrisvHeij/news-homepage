@@ -50,6 +50,14 @@ body {
   padding-block: var(--sp-300);
 }
 
+.bg-darken {
+  position: fixed;
+  inset: 0;
+  background-color: var(--c-navy-950);
+  opacity: 50%;
+  transition: all 250ms ease;
+}
+
 /* Header */
 .header-inner {
   display: flex;
@@ -81,7 +89,8 @@ body {
   padding-block-start: 8.375rem;;
   background-color: var(--white);
   z-index: 10;
-  transition: transform 250ms ease;
+  transition: transform 250ms ease, 
+    background-color 250ms ease;
   transform: translateX(100%);
 }
 
@@ -98,4 +107,10 @@ body {
 
 .menu-show {
   transform: translateX(0%);
+  background-color: var(--c-white);
+}
+
+/* Visually hidden class */
+.visually-hidden {
+  display: none;
 }
