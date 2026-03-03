@@ -23,40 +23,64 @@
   </head>
   <body>
     <div class="bg-darken visually-hidden" aria-hidden="true"></div>
-    <header>
-      <div class="header-inner">
-        <img class="logo" src="./assets/images/logo.svg" alt="" />
-        <button
-          type="button"
-          id="menu-button"
-          class="menu-button"
-          aria-haspopup="true"
-          aria-controls="menu"
-          aria-expanded="false"
-        >
-          <img src="./assets/images/icon-menu.svg" alt="" />
-        </button>
-      </div>
-      <nav>
-        <ul id="menu" class="menu" aria-labelledby="menu-button">
-          <li>
-            <a href="#" class="menu-link" role="menuitem">Home</a>
-          </li>
-          <li>
-            <a href="#" class="menu-link" role="menuitem">New</a>
-          </li>
-          <li>
-            <a href="#" class="menu-link" role="menuitem">Popular</a>
-          </li>
-          <li>
-            <a href="#" class="menu-link" role="menuitem">Trending</a>
-          </li>
-          <li>
-            <a href="#" class="menu-link" role="menuitem">Home</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header>
+        <div class="header-inner">
+          <img class="logo" src="./assets/images/logo.svg" alt="" />
+          <button
+            type="button"
+            id="menu-button"
+            class="menu-button"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <img src="./assets/images/icon-menu.svg" alt="" />
+          </button>
+        </div>
+        <nav>
+          <ul id="menu" class="menu" aria-labelledby="menu-button">
+            <li>
+              <a href="#" class="menu-link" role="menuitem">Home</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link" role="menuitem">New</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link" role="menuitem">Popular</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link" role="menuitem">Trending</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link" role="menuitem">Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="showcase">
+        <picture>
+          <source
+            srcset="./assets/images/image-web-3-desktop.jpg"
+            media="(min-width: 28rem)"
+          />
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+        </picture>
+        <div class="showcase-inner">
+          <h1 class="showcase-header">The Bright Future of Web 3.0?</h1>
+          <div class="showcase-description">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="#" class="article-link">Read more</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <!-- Home
   New
   Popular
