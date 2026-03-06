@@ -217,7 +217,52 @@ body {
 }
 
 /* Article container */
+.article-container {
+  margin-block-end: var(--sp-500);
+  display: grid;
+  gap: var(--sp-400);
+}
 
+.article {
+  display: flex;
+  gap: var(--sp-300);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article-img {
+  max-width: 6.25rem;  
+}
+
+.article-text {
+  display: grid;
+  gap: var(--sp-100);
+}
+
+.article-number {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: var(--c-red-500);
+}
+
+.article-subject {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 800;
+  transition: color 250ms ease;
+}
+
+/* Hover state article-subject */
+.article-subject:hover {
+  color: var(--c-red-500);
+}
+
+.article-description {
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: var(--c-navy-600);
+}
 
 /* Visually hidden / Screen reader only */
 .sr-only {
