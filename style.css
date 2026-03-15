@@ -67,7 +67,7 @@ body {
   position: fixed;
   inset: 0;
   background-color: var(--c-navy-950);
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 /* Header */
@@ -99,7 +99,7 @@ body {
   inset: 0 0 0 30%;
   padding-inline: clamp(1.5rem, calc(12.55px + 3.053vw), 2.25rem);
   padding-block-start: 8.375rem;;
-  background-color: var(--white);
+  background-color: var(--c-white);
   z-index: 10;
   transition: transform 250ms ease, 
     background-color 250ms ease;
@@ -226,7 +226,7 @@ body {
 .article {
   display: flex;
   gap: var(--sp-300);
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .article-img {
